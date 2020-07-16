@@ -1,6 +1,6 @@
 <div class="container">
     <h2 class="text-center mt-5" >All Posts</h2>
-    <div class="card mx-auto w-50 m-4 bg-light" [routerLink]="['/posts', post.id]" *ngFor="let post of posts">
+    <div class="card mx-auto w-50 m-4 bg-light" [routerLink]="['/posts', post.id]" *ngFor="let post of posts | slice:0:10" >
         <div class="card-body">
             <h4 class="card-title"> <span>{{post.id}} </span> - {{post.title}}</h4>
             <p class="card-text">{{post.body}}</p>
