@@ -26,6 +26,7 @@ export class PostComponent implements OnInit {
   ongetPost() {
     this.post = this.postsServices.getpost(this.postId).subscribe((res) => {
       this.post = res;
+      console.log("show res :" + res) 
     });
     console.log(this.post);
   }
