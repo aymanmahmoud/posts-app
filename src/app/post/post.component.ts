@@ -39,8 +39,8 @@ export class PostComponent implements OnInit {
     this.router.navigate(['/posts']);
   }
 
-  onSubmitform(value) {
-    this.postsServices.updatePost(this.postId, value).subscribe((res) => {
+  onSubmitform(post) {
+    this.postsServices.updatePost(this.postId,post ).subscribe((res) => {
       console.log(res);
       this.showUpdatedMessage();
     });

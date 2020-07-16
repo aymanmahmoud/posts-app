@@ -4,8 +4,9 @@
 
 export const environment = {
   production: false,
-  baseURL :'http://localhost:3000/'
+  // baseURL :'http://localhost:3000/'
   // baseURL: "https://jsonplaceholder.typicode.com/",
+  baseURL:"https://posts-app-7f6c4.firebaseio.com/"
 };
 
 /*

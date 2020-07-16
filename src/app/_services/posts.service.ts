@@ -10,18 +10,18 @@ export class PostsService {
   constructor(private http: HttpClient) {}
 
   getPosts() {
-    return this.http.get(this.baseURL + 'posts/');
+    return this.http.get(this.baseURL + 'posts/' + '.json');
   }
 
   getpost(id: number) {
-    return this.http.get(this.baseURL + 'posts/' + id);
+    return this.http.get(this.baseURL + 'posts/' + id + '.json');
   }
 
-  deletePost(id: number){
-    return this.http.delete(this.baseURL + 'posts/' + id);
+  deletePost(id: number) {
+    return this.http.delete(this.baseURL + 'posts/' + id + '.json');
   }
 
-  updatePost(id,post){
-    return this.http.put(this.baseURL + 'posts/' + id , post);
+  updatePost(id, post) {
+    return this.http.patch(this.baseURL + 'posts/' + id + '.json', post);
   }
 }
