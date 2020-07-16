@@ -53,6 +53,7 @@ export class PostComponent implements OnInit {
   }
   showDeletedMessage() {
     this.toastr.success('Post Deleted', 'Deleted');
+    //comment
   
   }
 }
